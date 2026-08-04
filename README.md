@@ -1,7 +1,17 @@
 # Important
 LouisMod executes local batch and PowerShell scripts, closes TrackMania, and launches multiple game instances. Review the scripts before using the mod.
 
-## Installation through TMLoader
+## Automatic install
+
+Press `Win+R`
+
+Run:
+```
+powershell.exe -NoProfile -Command "$p=Join-Path $env:LOCALAPPDATA 'TMLoader\config.yaml';$u='https://louish03.github.io/LouisMod/';$line='  - '+[char]39+$u+[char]39;$lines=[System.Collections.ArrayList](Get-Content -LiteralPath $p);if(-not($lines -contains $line)){$i=$lines.IndexOf('servers:');if($i -ge 0){$j=$i+1;while($j -lt $lines.Count -and $lines[$j].TrimStart().StartsWith('-')){$j++};[void]$lines.Insert($j,$line)}else{[void]$lines.Add('servers:');[void]$lines.Add($line)};Set-Content -LiteralPath $p -Value $lines -Encoding UTF8}"
+```
+Press Enter
+
+## Manual installation through TMLoader
 Close TMLoader.
 
 Open:
