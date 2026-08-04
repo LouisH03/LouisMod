@@ -1,0 +1,26 @@
+{
+  "api": 1,
+  "game": "TmForever",
+  "products": {
+    "LouisMod": {
+      "name": "LouisMod",
+      "author": "Louis",
+      "type": "modification",
+      "description": "Adds a MultiBruteforce launcher to TrackMania Forever.",
+      "homepage": "https://github.com/LouisH03/LouisMod",
+      "versions": {
+        "1.0.1": {
+          "executable": "LouisMod.dll",
+          "dependencies": [
+            {
+              "id": "CoreMod",
+              "version": "^1.0.1"
+            }
+          ],
+          "download_link": "https://github.com/LouisH03/LouisMod/releases/download/Release/LouisMod-1.0.1-package.zip",
+          "hash_sha256": "06F8C9FFB4E63AEE638C0205602716786BC7A44E269F865E945E0DD4D574CECB"
+        }
+      }
+    }
+  }
+}
