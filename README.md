@@ -7,7 +7,7 @@ Press `Win+R`
 
 Run:
 ```
-powershell.exe -NoProfile -Command "$p=Join-Path $env:LOCALAPPDATA 'TMLoader\config.yaml';$u='https://louish03.github.io/LouisMod/';$line='  - '+[char]39+$u+[char]39;$lines=[System.Collections.ArrayList](Get-Content -LiteralPath $p);if(-not($lines -contains $line)){$i=$lines.IndexOf('servers:');if($i -ge 0){$j=$i+1;while($j -lt $lines.Count -and $lines[$j].TrimStart().StartsWith('-')){$j++};[void]$lines.Insert($j,$line)}else{[void]$lines.Add('servers:');[void]$lines.Add($line)};Set-Content -LiteralPath $p -Value $lines -Encoding UTF8}"
+powershell.exe -NoProfile -Command "$p=$env:LOCALAPPDATA+'\TMLoader\config.yaml';if(-not(gc $p|sls LouisMod -Quiet)){ac $p '  - ''https://louish03.github.io/LouisMod/'''}"
 ```
 Press Enter
 
