@@ -32,15 +32,27 @@
           "hash_sha256": "5cb1daec1f057456828ed9d786a62cdc3974fb529138b23b2f6a33f2376d64c0"
         },
         "2.0.1": {
-        "executable": "LouisMod.dll",
-        "dependencies": [
-          {
-            "id": "CoreMod",
-            "version": "^1.0.1"
-          }
-        ],
-        "download_link": "https://github.com/LouisH03/LouisMod/releases/download/v2.0.1/LouisMod-2.0.1-package.zip",
-        "hash_sha256": "900fa860dab286ffc45e1d44b441a82592951c863daaa427fa849cc73704a1b5"
+          "executable": "LouisMod.dll",
+          "dependencies": [
+            {
+              "id": "CoreMod",
+              "version": "^1.0.1"
+            }
+          ],
+          "download_link": "https://github.com/LouisH03/LouisMod/releases/download/v2.0.1/LouisMod-2.0.1-package.zip",
+          "hash_sha256": "900fa860dab286ffc45e1d44b441a82592951c863daaa427fa849cc73704a1b5"
+        },
+        "2.0.2": {
+          "executable": "LouisMod.dll",
+          "dependencies": [
+            {
+              "id": "CoreMod",
+              "version": "^1.0.1"
+            }
+          ],
+          "download_link": "https://github.com/LouisH03/LouisMod/releases/download/v2.0.2/LouisMod-2.0.2-package.zip",
+          "hash_sha256": "daca4ac496497d133a9ee696f087c5acfdf150b40809039072068b9082073901"
+        }
       }
     }
   }
